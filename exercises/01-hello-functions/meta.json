@@ -1,0 +1,5 @@
+{
+  "title": "Hello, functions",
+  "topic": "Functions & Strings",
+  "hint": "format! works like println!, but returns a String instead of printing it."
+}

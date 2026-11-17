@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rust Trainer</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦀</text></svg>" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">🦀 Rust Trainer</div>
+      <div class="progress-wrap" title="Exercises solved">
+        <div class="progress"><div id="progress-fill"></div></div>
+        <span id="progress-text">0 / 0</span>
+      </div>
+      <span id="rustc-version" class="version"></span>
+    </header>
+
+    <div class="layout">
+      <nav class="exercises">
+        <ol id="exercise-list"></ol>
+      </nav>
+
+      <article class="lesson">
+        <div class="topic" id="ex-topic"></div>
+        <h1 id="ex-title">Loading…</h1>
+        <div id="ex-lesson"></div>
+        <div class="hint-box" id="hint-box" hidden></div>
+        <div class="nav-buttons">
+          <button id="prev-btn">← Previous</button>
+          <button id="next-btn">Next →</button>
+        </div>
+      </article>
+
+      <section class="workspace">
+        <div class="toolbar">
+          <button id="run-btn" class="primary" title="Compile and run main() (Ctrl+Shift+Enter)">▶ Run</button>
+          <button id="check-btn" class="accent" title="Compile and run the tests (Ctrl+Enter)">✔ Check</button>
+          <span class="spacer"></span>
+          <button id="hint-btn" title="Show a hint">💡 Hint</button>
+          <button id="solution-btn" title="Compare with a reference solution">👁 Solution</button>
+          <button id="reset-btn" title="Start this exercise again">↺ Reset</button>
+        </div>
+
+        <div class="editors">
+          <div class="editor-wrap">
+            <div class="pane-label">Your code <span class="file">main.rs</span></div>
+            <div class="editor">
+              <pre id="gutter" class="gutter" aria-hidden="true"></pre>
+              <textarea id="code" spellcheck="false" autocapitalize="off" autocomplete="off" wrap="off"></textarea>
+            </div>
+          </div>
+          <div class="editor-wrap" id="solution-wrap" hidden>
+            <div class="pane-label">Reference solution <span class="file">one possible way</span></div>
+            <pre id="solution" class="solution"></pre>
+          </div>
+        </div>
+
+        <div class="terminal-wrap">
+          <div class="pane-label">Terminal <button id="clear-btn" class="link">clear</button></div>
+          <div id="terminal" class="terminal"></div>
+        </div>
+      </section>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

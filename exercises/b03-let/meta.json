@@ -1,0 +1,6 @@
+{
+  "title": "Variables with let",
+  "topic": "let",
+  "hint": "let minutes = hours * 60;   then put   minutes   alone on the last line.",
+  "level": "Beginner"
+}

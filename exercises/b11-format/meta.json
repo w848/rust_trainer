@@ -1,0 +1,6 @@
+{
+  "title": "Building text",
+  "topic": "format!",
+  "hint": "format!(\"My name is {name} and I am {age}.\")",
+  "level": "Beginner"
+}

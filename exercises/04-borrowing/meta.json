@@ -1,0 +1,5 @@
+{
+  "title": "Borrowing: the first word",
+  "topic": "Ownership & &str",
+  "hint": "s.split_whitespace().next() gives an Option<&str>. .unwrap_or(\"\") turns None into an empty text."
+}

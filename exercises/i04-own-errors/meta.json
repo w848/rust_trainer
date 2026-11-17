@@ -1,0 +1,6 @@
+{
+  "title": "Your own error type",
+  "topic": "Result + custom errors",
+  "hint": "let (key, value) = line.split_once('=').ok_or(ParseError::MissingEquals)?;   value.parse::<i32>().map_err(|_| ParseError::BadNumber(value.to_string()))?",
+  "level": "Intermediate"
+}

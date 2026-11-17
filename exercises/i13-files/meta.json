@@ -1,0 +1,6 @@
+{
+  "title": "Reading files",
+  "topic": "std::fs + io::Result",
+  "hint": "Ok(fs::read_to_string(path)?.lines().count())   |   let text = fs::read_to_string(path)?; Ok(text.lines().max_by_key(|l| l.len()).map(String::from))",
+  "level": "Intermediate"
+}

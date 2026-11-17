@@ -1,0 +1,6 @@
+{
+  "title": "Most used words",
+  "topic": "HashMap + sorting",
+  "hint": "word.trim_matches(|c: char| !c.is_alphanumeric()).to_lowercase()   then   *counts.entry(word).or_insert(0) += 1;   For top_words: collect into a Vec, sort_by count then word, truncate(n)",
+  "level": "Intermediate"
+}

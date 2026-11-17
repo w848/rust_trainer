@@ -1,0 +1,6 @@
+{
+  "title": "Counting with for",
+  "topic": "for loop & ranges",
+  "hint": "for i in 1..=n {   result *= i;   }",
+  "level": "Beginner"
+}

@@ -1,0 +1,6 @@
+{
+  "title": "Mini project: to-do list",
+  "topic": "everything together",
+  "hint": "complete: match self.tasks.iter_mut().find(|t| t.id == id) { Some(t) => { t.done = true; Ok(()) } None => Err(format!(\"no task with id {id}\")) }   remove: let pos = self.tasks.iter().position(|t| t.id == id)?; Some(self.tasks.remove(pos))",
+  "level": "Intermediate"
+}

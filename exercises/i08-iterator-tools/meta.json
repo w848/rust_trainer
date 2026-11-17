@@ -1,0 +1,6 @@
+{
+  "title": "Iterator toolbox",
+  "topic": "filter_map, zip, enumerate",
+  "hint": "sum_valid: .filter_map(|s| s.trim().parse::<i32>().ok()).sum()   |   dot: a.iter().zip(b).map(|(x, y)| x * y).sum()   |   positions: .enumerate().filter(|(_, item)| **item == target).map(|(i, _)| i).collect()",
+  "level": "Intermediate"
+}

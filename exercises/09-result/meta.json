@@ -1,0 +1,5 @@
+{
+  "title": "Result: errors without exceptions",
+  "topic": "Result<T, E>",
+  "hint": "s.trim().parse::<u8>() gives a Result. Use match: Ok(age) if age <= 150 => Ok(age), Ok(_) => Err(...), Err(_) => Err(...)."
+}

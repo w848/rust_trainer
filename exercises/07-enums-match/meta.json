@@ -1,0 +1,5 @@
+{
+  "title": "Enums and match",
+  "topic": "enum & match",
+  "hint": "match self { Shape::Circle(r) => ..., Shape::Square(side) => ..., Shape::Rectangle(w, h) => ... }. Pi is std::f64::consts::PI."
+}

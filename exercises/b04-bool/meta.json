@@ -1,0 +1,6 @@
+{
+  "title": "True or false",
+  "topic": "bool & comparisons",
+  "hint": "The whole body can be one line: age >= 18",
+  "level": "Beginner"
+}

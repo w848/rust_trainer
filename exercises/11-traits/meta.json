@@ -1,0 +1,5 @@
+{
+  "title": "Traits: shared behavior",
+  "topic": "trait & impl Trait",
+  "hint": "impl Speak for Dog { fn speak(&self) -> String { format!(\"{} says Woof\", self.name) } }. The loud default: self.speak().to_uppercase()."
+}

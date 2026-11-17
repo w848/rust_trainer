@@ -1,0 +1,5 @@
+{
+  "title": "FizzBuzz",
+  "topic": "if / else",
+  "hint": "Test the 'divisible by 15' case first. n % 3 == 0 means 'divisible by 3'. n.to_string() turns a number into a String."
+}

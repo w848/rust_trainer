@@ -1,0 +1,6 @@
+{
+  "title": "Printing your types",
+  "topic": "the Display trait",
+  "hint": "write!(f, \"{:02}:{:02}\", self.hours, self.minutes)   |   add_minutes: total = (hours*60 + minutes + extra) % (24*60)",
+  "level": "Intermediate"
+}

@@ -1,0 +1,6 @@
+{
+  "title": "A generic stack",
+  "topic": "generic struct + impl<T>",
+  "hint": "balanced: push opening brackets; on a closing one, if stack.pop() != Some(matching opening) { return false }. At the end: stack.is_empty()",
+  "level": "Intermediate"
+}

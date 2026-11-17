@@ -1,0 +1,5 @@
+{
+  "title": "Iterators and closures",
+  "topic": "iter, filter, map, sum",
+  "hint": "numbers.iter().filter(|&&n| n % 2 != 0).map(|&n| n * n).sum()"
+}

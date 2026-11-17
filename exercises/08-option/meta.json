@@ -1,0 +1,5 @@
+{
+  "title": "Option: maybe there's a value",
+  "topic": "Option<T>",
+  "hint": "Loop with for (index, &value) in numbers.iter().enumerate() and return Some(index) when value == target. After the loop: None."
+}

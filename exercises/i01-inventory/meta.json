@@ -1,0 +1,6 @@
+{
+  "title": "A shop inventory",
+  "topic": "struct + Vec + iterators",
+  "hint": "total: items.iter().map(|i| i.price * i.quantity as f64).sum()   |   most_stocked: items.iter().max_by_key(|i| i.quantity).map(|i| i.name.as_str())",
+  "level": "Intermediate"
+}

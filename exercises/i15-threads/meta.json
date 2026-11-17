@@ -1,0 +1,6 @@
+{
+  "title": "Doing things in parallel",
+  "topic": "threads & channels",
+  "hint": "for chunk in numbers.chunks(size) { let chunk = chunk.to_vec(); handles.push(thread::spawn(move || chunk.iter().sum::<u64>())); }  then  handles.into_iter().map(|h| h.join().unwrap()).sum()",
+  "level": "Intermediate"
+}

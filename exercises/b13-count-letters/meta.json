@@ -1,0 +1,6 @@
+{
+  "title": "Counting letters",
+  "topic": "chars & if in a loop",
+  "hint": "for c in text.chars() {   if c == letter {   count += 1;   }   }",
+  "level": "Beginner"
+}

@@ -1,0 +1,6 @@
+{
+  "title": "Working with text",
+  "topic": "&str and String",
+  "hint": "word.to_uppercase()",
+  "level": "Beginner"
+}

@@ -1,0 +1,6 @@
+{
+  "title": "Leaderboard",
+  "topic": "sorting with sort_by",
+  "hint": "players.sort_by(|a, b| b.score.cmp(&a.score).then(a.name.cmp(&b.name)));",
+  "level": "Intermediate"
+}

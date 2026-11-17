@@ -1,0 +1,123 @@
+:root {
+  --bg: #1e1e2e;
+  --panel: #262637;
+  --panel-2: #313244;
+  --border: #45475a;
+  --text: #cdd6f4;
+  --muted: #9399b2;
+  --rust: #f5793a;
+  --green: #a6e3a1;
+  --red: #f38ba8;
+  --yellow: #f9e2af;
+  --blue: #89b4fa;
+  --term: #11111b;
+  --mono: "Cascadia Code", "Cascadia Mono", Consolas, monospace;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; }
+body { display: flex; flex-direction: column; background: var(--bg); }
+button { font: inherit; color: inherit; }
+
+button {
+  background: var(--panel-2); border: 1px solid var(--border); border-radius: 8px;
+  padding: 6px 12px; cursor: pointer;
+}
+button:hover:not(:disabled) { border-color: var(--rust); }
+button:disabled { opacity: 0.5; cursor: wait; }
+button.primary { background: var(--blue); color: #11111b; border-color: var(--blue); font-weight: 600; }
+button.accent { background: var(--rust); color: #11111b; border-color: var(--rust); font-weight: 600; }
+button.link { background: none; border: 0; padding: 0; color: var(--muted); text-decoration: underline; font-size: 12px; }
+
+/* Top bar */
+.topbar {
+  display: flex; align-items: center; gap: 20px;
+  padding: 10px 16px; background: var(--panel); border-bottom: 1px solid var(--border);
+}
+.brand { font-weight: 700; font-size: 18px; }
+.progress-wrap { display: flex; align-items: center; gap: 10px; flex: 1; max-width: 360px; font-size: 13px; color: var(--muted); }
+.progress { flex: 1; height: 8px; background: var(--panel-2); border-radius: 4px; overflow: hidden; }
+#progress-fill { height: 100%; width: 0; background: var(--green); transition: width 0.4s; }
+.version { margin-left: auto; color: var(--muted); font: 12px var(--mono); }
+
+/* Three columns */
+.layout { flex: 1; display: grid; grid-template-columns: 230px minmax(300px, 1fr) minmax(420px, 1.4fr); min-height: 0; }
+
+.exercises { background: var(--panel); border-right: 1px solid var(--border); overflow-y: auto; padding: 6px 10px 16px; }
+.exercises h2 { font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin: 12px 6px 8px; }
+#exercise-list { list-style: none; margin: 0; padding: 0; }
+#exercise-list li {
+  display: flex; gap: 8px; align-items: baseline; padding: 7px 8px; border-radius: 8px;
+  cursor: pointer; font-size: 14px;
+}
+#exercise-list li.group {
+  display: block; cursor: default; padding: 14px 8px 6px; font-size: 12px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted);
+}
+#exercise-list li.group:hover { background: none; }
+#exercise-list li:hover { background: var(--panel-2); }
+#exercise-list li.current { background: var(--panel-2); box-shadow: inset 3px 0 0 var(--rust); }
+#exercise-list .mark { width: 16px; flex-shrink: 0; color: var(--muted); font-size: 12px; text-align: center; }
+#exercise-list li.solved .mark { color: var(--green); }
+#exercise-list .topic-small { display: block; font-size: 11.5px; color: var(--muted); }
+
+/* Lesson */
+.lesson { overflow-y: auto; padding: 18px 26px 26px; border-right: 1px solid var(--border); line-height: 1.6; }
+.topic { color: var(--rust); font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600; }
+.lesson h1 { margin: 4px 0 14px; font-size: 24px; }
+.lesson code { font-family: var(--mono); font-size: 0.9em; background: var(--panel-2); padding: 1px 5px; border-radius: 4px; }
+.lesson pre { background: var(--term); border: 1px solid var(--border); border-radius: 8px; padding: 10px 14px; overflow-x: auto; }
+.lesson pre code { background: none; padding: 0; font-size: 13.5px; }
+.lesson strong { color: #fff; }
+.lesson ul { padding-left: 22px; }
+.hint-box { margin-top: 16px; padding: 10px 14px; border-left: 3px solid var(--yellow); background: rgba(249, 226, 175, 0.08); border-radius: 0 8px 8px 0; }
+.hint-box code { font-family: var(--mono); font-size: 0.9em; }
+.nav-buttons { display: flex; justify-content: space-between; margin-top: 24px; }
+
+/* Workspace: editor + terminal */
+.workspace { display: flex; flex-direction: column; min-width: 0; min-height: 0; padding: 10px 14px 14px; gap: 10px; }
+.toolbar { display: flex; gap: 8px; align-items: center; }
+.spacer { flex: 1; }
+.pane-label { display: flex; align-items: center; gap: 10px; font-size: 12px; color: var(--muted); margin-bottom: 4px; }
+.pane-label .file { font-family: var(--mono); color: var(--text); opacity: 0.7; }
+
+.editors { flex: 3; display: flex; gap: 10px; min-height: 0; }
+.editor-wrap { flex: 1; display: flex; flex-direction: column; min-width: 0; min-height: 0; }
+.editor-wrap[hidden] { display: none; }
+.editor {
+  flex: 1; display: flex; min-height: 0; overflow: hidden;
+  background: var(--term); border: 1px solid var(--border); border-radius: 10px;
+}
+.editor:focus-within { border-color: var(--rust); }
+.gutter, #code, .solution { font: 14px/1.5 var(--mono); tab-size: 4; }
+.gutter {
+  margin: 0; padding: 10px 8px 10px 12px; text-align: right; color: #585b70;
+  user-select: none; overflow: hidden; min-width: 44px; border-right: 1px solid #2a2a3c;
+}
+#code {
+  flex: 1; border: 0; outline: 0; resize: none; padding: 10px 12px; margin: 0;
+  background: transparent; color: var(--text); white-space: pre; overflow: auto; caret-color: var(--rust);
+}
+.solution {
+  flex: 1; margin: 0; padding: 10px 12px; overflow: auto; color: var(--text);
+  background: #181825; border: 1px dashed var(--border); border-radius: 10px;
+}
+
+.terminal-wrap { flex: 2; display: flex; flex-direction: column; min-height: 0; }
+.terminal {
+  flex: 1; overflow: auto; padding: 10px 14px; margin: 0;
+  background: var(--term); border: 1px solid var(--border); border-radius: 10px;
+  font: 13px/1.5 var(--mono); white-space: pre-wrap; word-break: break-word;
+}
+.terminal .cmd { color: var(--blue); }
+.terminal .error { color: var(--red); }
+.terminal .warning { color: var(--yellow); }
+.terminal .help { color: #94e2d5; }
+.terminal .ok { color: var(--green); }
+.terminal .dim { color: var(--muted); }
+.terminal .banner { display: block; margin: 8px 0; padding: 8px 12px; border-radius: 8px; font-family: "Segoe UI", system-ui, sans-serif; font-size: 14px; }
+.terminal .banner.success { background: rgba(166, 227, 161, 0.12); color: var(--green); border: 1px solid rgba(166, 227, 161, 0.35); }
+.terminal .banner.fail { background: rgba(243, 139, 168, 0.1); color: var(--red); border: 1px solid rgba(243, 139, 168, 0.3); }

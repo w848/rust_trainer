@@ -1,0 +1,6 @@
+{
+  "title": "A list of numbers",
+  "topic": "arrays & for",
+  "hint": "let mut sum = 0;   for n in numbers { sum += n; }   sum",
+  "level": "Beginner"
+}

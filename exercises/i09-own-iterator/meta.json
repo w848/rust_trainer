@@ -1,0 +1,6 @@
+{
+  "title": "Your own iterator",
+  "topic": "implementing Iterator",
+  "hint": "next(): let value = self.current; self.current = self.next; self.next += value; Some(value)",
+  "level": "Intermediate"
+}

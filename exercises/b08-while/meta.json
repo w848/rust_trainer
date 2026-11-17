@@ -1,0 +1,6 @@
+{
+  "title": "Repeating with while",
+  "topic": "while loop",
+  "hint": "Inside the loop:   sum += i;   then   i += 1;",
+  "level": "Beginner"
+}

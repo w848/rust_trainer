@@ -1,0 +1,5 @@
+{
+  "title": "Lifetimes: the longest text",
+  "topic": "Lifetimes 'a",
+  "hint": "fn longest<'a>(a: &'a str, b: &'a str) -> &'a str { if b.len() > a.len() { b } else { a } }"
+}

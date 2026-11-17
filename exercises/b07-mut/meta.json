@@ -1,0 +1,6 @@
+{
+  "title": "Changing a variable",
+  "topic": "let mut",
+  "hint": "total += 10;   then   total *= 2;   and finally   total   on the last line",
+  "level": "Beginner"
+}

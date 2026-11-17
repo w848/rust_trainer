@@ -1,0 +1,5 @@
+{
+  "title": "Variables and loops",
+  "topic": "mut & for loops",
+  "hint": "let mut total = 0; then for i in 1..=n { total += i; }"
+}

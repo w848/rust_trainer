@@ -1,0 +1,6 @@
+{
+  "title": "Organising code in modules",
+  "topic": "mod & pub",
+  "hint": "Put pub before each fn and before mod describe. Inside describe, call super::f_to_c(f).",
+  "level": "Intermediate"
+}

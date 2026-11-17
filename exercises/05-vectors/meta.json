@@ -1,0 +1,5 @@
+{
+  "title": "Vectors: keep the even numbers",
+  "topic": "Vec & slices",
+  "hint": "Create let mut result = Vec::new(); loop with for &n in numbers { ... } and result.push(n) when n % 2 == 0."
+}

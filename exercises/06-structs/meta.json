@@ -1,0 +1,5 @@
+{
+  "title": "Structs and methods",
+  "topic": "struct & impl",
+  "hint": "Inside impl Rectangle, self.width and self.height are the fields. can_hold: both sides of self must be bigger than other's."
+}

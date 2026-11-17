@@ -1,0 +1,5 @@
+{
+  "title": "Generics: the largest item",
+  "topic": "Generics & trait bounds",
+  "hint": "let mut largest = items[0]; for &item in items { if item > largest { largest = item; } } largest"
+}

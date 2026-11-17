@@ -1,0 +1,5 @@
+{
+  "title": "HashMap: count the words",
+  "topic": "HashMap & entry",
+  "hint": "for word in text.split_whitespace() { *counts.entry(word.to_lowercase()).or_insert(0) += 1; }"
+}

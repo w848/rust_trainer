@@ -1,0 +1,6 @@
+{
+  "title": "A shared bank account",
+  "topic": "Rc<RefCell<T>>",
+  "hint": "deposit: account.borrow_mut().balance += amount;   withdraw: let mut acc = account.borrow_mut(); if acc.balance < amount { return Err(...) }",
+  "level": "Intermediate"
+}
